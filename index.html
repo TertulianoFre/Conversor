@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="caixa1">
+   <h1 id="texto1">CONVERSOR DE MOEDAS</h1> 
+    </div>
+    <div id="caixa2">
+   <p class="um">Escolha sua <b>moeda:</b></p>
+   <select class="select">
+       <option>REAL</option>
+   </select>
+   <p class="um">Converter <b>para:</b></p>
+   <select class="select" id="selectmoedas">
+       <option>DOLAR</option>
+       <option>EURO</option>
+   </select>
+   <p class="um">Seu <b>valor:</b></p>
+
+    <input id="input" placeholder="Quanto tem?" type="number" >
+
+     <button id="botao">CONVERTER</button>
+                <div id="caixa3">
+                <div class="caixa4">
+                <img src="./imagem/brasil.png">
+                <p class="um">REAL</p>
+                <p class="valores" id="texto-real">10.0000 reais</p>
+                </div>
+
+        <img id="seta" src="./imagem/seta.png">
+
+                <div class="caixa4">   
+                <img src="./imagem/eua.png" id="bDolar">
+                <p class="um" id="texto-moeda">DOLARES</p>
+                <p class="valores" id="input-moedas">0.0</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<style>
+body {
+    background: gray;
+}
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+    }
+#caixa1{
+    background: rgb(31, 5, 31);
+    width: 375px;
+    height: 66px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+}
+#texto1{
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 22px;
+}
+#caixa2{
+    background: whitesmoke;
+    width: 375px;
+    padding: 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.um{
+    margin-bottom: 6px;
+    color: #777777;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+}
+.select{
+    background: white;
+    border-radius: 10px;
+    border: 1px solid #888888;
+    height: 50px;
+    width: 330px;
+    margin-bottom: 25px;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    padding-left: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+#input{
+    height: 50px;
+    width: 330px;
+    background: white;
+    border: 1px solid #888888;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    outline: none;
+    padding-left: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+#botao{
+    background: rgb(48, 159, 173);
+    border-radius: 50px;
+    display: block;
+    height: 50px;
+    width: 330px;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    color:cornsilk;
+    outline: none;
+
+
+}
+#botao:active{
+    opacity: 0.5;
+}
+#caixa3{
+    padding-top: 12px;
+    border: 1px solid chocolate;
+    border-radius: 5px;
+    padding-bottom: 12px;
+
+}
+.caixa4{
+    text-align: center;
+
+
+}
+#seta{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    
+}
+.valores{
+    font-weight: bold;
+    font-size: 20px;
+}
+</style>
+<script src="./scripts.js">
+</script>
+
+</html>
